@@ -1,3 +1,10 @@
+/**
+ * This webpack config is derived from the OpenEdx prod webpack config and is
+ * used to bundle the Open Edx pilets. It removes the ReactRefreshWebpackPlugin
+ * as it was conflicting with Piral during bundling. It als remoes the HTMLWebpack
+ * plugin as Pilets, unlike MFE's, are not independently run.
+ */
+
 // This is the prod Webpack config. All settings here should prefer smaller,
 // optimized bundles at the expense of a longer build time.
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');

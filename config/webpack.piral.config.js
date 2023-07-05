@@ -1,3 +1,9 @@
+/**
+ * This webpack config is derived from the OpenEdx dev webpack config and is
+ * used to bundle the Open Edx Piral shell. It removes babel and other loader
+ * configs as those are not necessary for the simple layouts used in the shell.
+ */
+
 // This is the dev Webpack config. All settings here should prefer a fast build
 // time at the expense of creating larger, unoptimized bundles.
 const { merge } = require('webpack-merge');
